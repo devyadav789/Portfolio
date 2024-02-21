@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="logo.jpeg" />
+
+  <title>
+    Dev Yadav
+  </title>
+
+  <meta name="description" content="Dev Yadav, a full-stack developer, completed their MSC IT degree at NK College in Mumbai and is currently pursuing a Full Stack Developer course at IT Vedant Institute.">
+  <meta name="keywords" content="Dev Yadav - Good knowledge of Python SQL HTML CSS JAVASCRIPT" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/865661c01c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="DEV-logos_transparent.png" class="logo">
+        <ul>
+          <li><a href="#"><i class="fa-solid fa-house-user"></i>Home</a></li>
+          <li><a href="#about"><i class="fa-solid fa-circle-info"></i>About</a></li>
+          <li><a href="#project"><i class="fa-solid fa-diagram-project"></i>Project</a></li>
+          <li><a href="#contact"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <h1>Hi , I'm <span>D</span>ev</h1>
+      </div>
+    </div>
+  </div>
+
+<!--About-->
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="Remove background project (7).png">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">I'm Dev Yadav, an MSC IT graduate from NK College, Mumbai. I'm passionate about tech, <br>and currently,I'm diving into a Full Stack Developer course.<br>My goal - To become a versatile and skilled developer in the ever-evolving world of IT</p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('Education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="Skills">
+          <ul>
+            <li><span>HTML</span><br>Web Development</li>
+            <LI><span>CSS</span><br>Web Designing</LI>
+            <li><span>JavaScript</span><br>Web Development</li>
+            <li><span>Python</span><br>Web and Software Developer</li>
+            <li><span>MySQL</span><br>Manage Database System</li>
+          </ul>
+        </div>
+      <div class="tab-contents" id="Education">
+        <ul>
+          <li><span>2023</span><br>Full Stack Software Developer From Mumbai.</li>
+          <li><span>2018</span><br>Msc. IT From Mumbai.</li>
+          <li><span>2014</span><br>Bsc.Cs From Mumbai.</li>
+        </ul>
+      </div>
+      <a href="DEVANANDCV.pdf" class="btn">Download CV</a>
+      </div>
+    </div>
+  </div>
+
+<!--project-->
+
+<div id="project">
+  <div class="container">
+    <h1 class="sub-title">Project</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="bank.jpg">
+        <div class="layer">
+          <h3>Online Bank Application</h3>
+          <p>Bank Apllication Project created using Python</p>
+          <a href="https://drive.google.com/drive/u/0/folders/1QwHibauXpXQy7xP6WFMtfLB9xg0yicPP"><i class="fa-solid fa-up-right-from-square"></i> </a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="lib.png">
+        <div class="layer">
+          <h3>Library Management System</h3>
+          <p>Library Management System created using Python</p>
+          <a href="https://drive.google.com/drive/u/0/folders/1Hd0dVSLr1NOguHKpuNsF2oFI3HtYCg7o"><i class="fa-solid fa-up-right-from-square"></i> </a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="p.png">
+        <div class="layer">
+          <h3>Portfolio</h3>
+          <p>Simple Portfolio Using HTML CSS and JavaScript</p>
+          <a href="https://drive.google.com/drive/folders/1_JyZS8IaePbQck9MbAlcBZjYrR1q77W0?usp=sharing"><i class="fa-solid fa-up-right-from-square"></i> </a>
+        </div>
+      </div>
+    </div>
+    <a href="https://drive.google.com/drive/u/0/folders/1v-USRCKMK5uuEWwYaZcpJVYDCvGKXn6F" class="btn">See More</a>
+  </div>
+</div>
+<!--Contact-->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="sub-title">Contact me</h2>
+                <form action="mailto:devyadav0776@gmail.com" method="POST">
+                    <input name="name" type="text" placeholder="Enter your name" required maxlength="30">
+                    <input name="email" type="email" placeholder="Enter your email" required>
+                    <textarea name="message" placeholder="Leave a message" maxlength="500" required></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright &#169  Dev made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents")
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+</body>
+</html>
